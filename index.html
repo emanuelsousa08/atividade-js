@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Atividade JS</title>
+  </head>
+  <body>
+    <header>
+      <box-icon type='solid' name='file-js' size='md'></box-icon>
+      <input type="text" id="busca" onkeyup="pesquisarTarefas()" placeholder="Pesquisar"/>
+    </header>
+    <main>
+      <section id="tarefas">
+        <h2>Tarefas <button onclick="abrirModal()">Nova Tarefa</button></h2>
+        <!-- <h6>Nenhuma tarefa listada</h6> -->
+        <ul id="lista"></ul>
+      </section>
+      <section id="overlay" onclick="fecharModal()"></section>
+      <div id="criarTarefa" class="modal">
+        <form onsubmit="novaTarefa()">
+          <h3>
+            Criar Tarefa
+            <box-icon name="x" size="md" onclick="fecharModal()"></box-icon>
+          </h3>
+          <label for="titulo">Título</label>
+          <input type="text" id="titulo" required />
+          <label for="descricao">Descrição</label>
+          <textarea id="descricao" required></textarea>
+          <button>Criar</button>
+        </form>
+      </div>
+      <!-- <div id="editarTarefa" class="modal">
+        <form onsubmit="alterarTarefa()">
+          <h3>
+            Editar Tarefa
+            <box-icon name="x" size="md" onclick="fecharModal()"></box-icon>
+          </h3>
+          <label for="titulo">Título</label>
+          <input type="text" id="titulo" required />
+          <label for="descricao">Descrição</label>
+          <textarea id="descricao" required></textarea>
+          <button>Editar</button>
+        </form>
+      </div> -->
+    </main>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </body>
+</html>
