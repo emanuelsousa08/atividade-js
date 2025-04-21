@@ -1,3 +1,3 @@
 # Atividade de JS do curso Geração Tech
 
---Esboço da atividade de JS
+Esboço da atividade de JS
