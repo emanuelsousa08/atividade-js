@@ -91,7 +91,7 @@ function pesquisarTarefas() {
 // inserir na div da linha 31 quando conseguir colocar pra funcionar: <box-icon name='edit-alt' size="sm" onclick="editarTarefa(${tarefa.id})"></box-icon>
 
 // function alterarTarefa(id){
-//   Event.preventDefault();
+//   event.preventDefault();
 //   let tarefa = {
 //     titulo: titulo.value,
 //     descricao: descricao.value
