@@ -73,7 +73,7 @@ function pesquisarTarefas() {
   console.log(lis);
   if (busca.value.length > 0) {
     lis.forEach((li) => {
-      if (!li.children[1].innerText.includes(busca.value)) {
+      if (!li.children[1].innerText.includes(busca.value)) { //o children está listando pela descrição, como pedido pelo professor na aula
         li.classList.add("oculto");
       } else {
         li.classList.remove("oculto");
