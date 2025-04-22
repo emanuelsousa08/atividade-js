@@ -1,13 +1,11 @@
 function abrirModal() {
   overlay.classList.add("active");
   criarTarefa.classList.add("active");
-//  editarTarefa.classList.add("active");
 }
 
 function fecharModal() {
   overlay.classList.remove("active");
   criarTarefa.classList.remove("active");
-//  editarTarefa.classList.remove("active");
 }
 
 function buscarTarefas() {
@@ -87,27 +85,3 @@ function pesquisarTarefas() {
     });
   }
 }
-
-// inserir na div da linha 31 quando conseguir colocar pra funcionar: <box-icon name='edit-alt' size="sm" onclick="editarTarefa(${tarefa.id})"></box-icon>
-
-// function alterarTarefa(id){
-//   event.preventDefault();
-//   let tarefa = {
-//     titulo: titulo.value,
-//     descricao: descricao.value
-//   };
-//   fetch(`http://localhost:3000/tarefas${id}`, {
-//     method: "PUT",
-//     headers: {
-//       "Content-Type": "application/json",
-//     },
-//     body: JSON.stringify(tarefa),
-//   })
-//     .then((res) => res.json())
-//     .then((res) => {
-//       fecharModal();
-//       buscarTarefas();
-//       let form = document.querySelector("#editarTarefa form");
-//       form.reset();
-//     });
-// }
