@@ -4,17 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <title>Atividade JS</title>
   </head>
   <body>
     <header>
-      <box-icon type='solid' name='file-js' size='md'></box-icon>
-      <input type="text" id="busca" onkeyup="pesquisarTarefas()" placeholder="Pesquisar"/>
+      <input
+        type="text"
+        id="busca"
+        onkeyup="pesquisarTarefas()"
+        placeholder="Pesquisar"
+      />
     </header>
     <main>
       <section id="tarefas">
         <h2>Tarefas <button onclick="abrirModal()">Nova Tarefa</button></h2>
-        <!-- <h6>Nenhuma tarefa listada</h6> -->
         <ul id="lista"></ul>
       </section>
       <section id="overlay" onclick="fecharModal()"></section>
@@ -22,7 +29,11 @@
         <form onsubmit="novaTarefa()">
           <h3>
             Criar Tarefa
-            <box-icon name="x" size="md" onclick="fecharModal()"></box-icon>
+            <i
+              class="bx bxs-x-circle bx-xs"
+              id="fechamodal"
+              onclick="fecharModal()"
+            ></i>
           </h3>
           <label for="titulo">Título</label>
           <input type="text" id="titulo" required />
@@ -33,6 +44,5 @@
       </div>
     </main>
     <script src="index.js"></script>
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </body>
 </html>

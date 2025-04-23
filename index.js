@@ -27,11 +27,13 @@ function inserirTarefas(listaDeTarefas) {
                     <h5>${tarefa.titulo}</h5>
                     <p>${tarefa.descricao}</p>
                     <div class="actions">
-                        <box-icon name='trash' size="sm" onclick="deletarTarefa(${tarefa.id})"></box-icon>
+                        <i class='bx bx-trash bx-xs' onclick="deletarTarefa(${tarefa.id})"></i>
                     </div>
                 </li>
             `;
     });
+  } else {
+    lista.innerHTML = `<h6>Nenhuma tarefa listada</h6>`;
   }
 }
 
@@ -73,7 +75,8 @@ function pesquisarTarefas() {
   console.log(lis);
   if (busca.value.length > 0) {
     lis.forEach((li) => {
-      if (!li.children[1].innerText.includes(busca.value)) { //o children está listando pela descrição, como pedido pelo professor na aula
+      if (!li.children[1].innerText.includes(busca.value)) {
+        //o children está listando pela descrição, como pedido pelo professor na aula
         li.classList.add("oculto");
       } else {
         li.classList.remove("oculto");

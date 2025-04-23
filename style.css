@@ -20,7 +20,6 @@ header {
   gap: 2em;
 }
 
-
 header input {
   width: 60%;
   height: 2.5em;
@@ -70,10 +69,6 @@ body {
   background-color: #0f2a45;
 }
 
-#tarefas h2 button box-icon {
-  fill: white;
-}
-
 #tarefas h6 {
   text-align: center;
   font-size: 18px;
@@ -112,11 +107,11 @@ body {
   align-items: flex-end;
   flex-direction: row;
   cursor: pointer;
-  fill: #999;
+  color: #999;
 }
 
 #tarefas ul li .actions:hover {
-  fill: #123456;
+  color: #123456;
   transition-duration: 200ms;
 }
 
@@ -167,13 +162,13 @@ body {
   align-items: center;
 }
 
-.modal form h3 box-icon {
-  fill: #999;
+.modal form h3 i {
+  color: #999;
   cursor: pointer;
 }
 
-.modal form h3 box-icon:hover {
-  fill: #123456;
+.modal form h3 i:hover {
+  color: #123456;
   transition-duration: 200ms;
 }
 
