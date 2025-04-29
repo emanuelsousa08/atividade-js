@@ -10,8 +10,8 @@ function fecharModal() {
 
 function buscarTarefas() {
   fetch("http://localhost:3000/tarefas")
-    .then((res) => res.json())
-    .then((res) => {
+    .then(res => res.json())
+    .then(res => {
       inserirTarefas(res);
     });
 }
@@ -21,7 +21,7 @@ buscarTarefas();
 function inserirTarefas(listaDeTarefas) {
   if (listaDeTarefas.length > 0) {
     lista.innerHTML = "";
-    listaDeTarefas.map((tarefa) => {
+    listaDeTarefas.map(tarefa => {
       lista.innerHTML += `
                 <li>
                     <h5>${tarefa.titulo}</h5>
